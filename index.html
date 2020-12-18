@@ -20,6 +20,24 @@
                 }
             }
 
+         .btn-grad {background-image: linear-gradient(to right, #00c6ff 0%, #0072ff  51%, #00c6ff  100%)}
+         .btn-grad {
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
         </style>
     </head>
     <body>
@@ -112,7 +130,7 @@
                                     <option>2030</option>
                                     <option>2031</option>
                                 </select>
-                                <button class="btn" style=" border-radius: 5px; border: #EFBD41; background-color:#EFBD41;">Add your Card</button>
+                                <button class="btn btn-grad" style=" border-radius: 5px; border: #EFBD41;">Add your Card</button>
                                 </p>
                             </div>
                         </div>
@@ -137,7 +155,7 @@
                             <div class="col-lg-10 col-lg-offset-1 col-sm-11 col-sm-offset-1 radio">
                                 <input type="radio" name="payment" value="payment" onclick="document.getElementById('demo1').style.display='block'">Other UPI Apps
                                 <p id="demo1" style="display:none; background-color: #FCF5EE;">Please enter your UPI ID
-                                    <br><input type="text" placeholder="Ex: MobileNumber@upi"><button class="btn" style="margin-left:25px; background-color:#EFBD41; border-radius: 5px; border: #EFBD41;">Verify</button></p>
+                                    <br><input type="text" placeholder="Ex: MobileNumber@upi"><button class="btn btn-grad" style="margin-left:25px; border-radius: 5px; border: #EFBD41;">Verify</button></p>
                             </div>
                         </div>
                         <div class="row container-fluid" style=" border-radius: 10px; margin-top: 2px;">
@@ -160,7 +178,7 @@
                         <a>Enter a gift card, voucher or promotional code</a>
                     </div>
                     <div class="col-lg-2 col-sm-12" style=" background-color: #F7F7F7; border-radius: 5px; border:1px solid #DDDDDD; margin-top:30px;">
-                            <button class="btn btn-block" style="background-color:#EFBD41; margin-top: 20px;">Continue</button>
+                            <button class="btn btn-block btn-grad" style="; margin-top: 20px;">Continue</button>
                         <h5>You can view this order before it's final.</h5>
                     </div>
                 </div>
